@@ -1,0 +1,22 @@
+/* Custom styles for the navbar */
+.CustomNavbar {
+    background-color: #f8f9fa; /* Custom background color */
+}
+
+.CustomNavbarBrand {
+    font-size: 24px; /* Custom font size for brand */
+    color: #2B3674; /* Custom color for brand */
+}
+
+.CustomNavbarBrand:hover {
+    color: #4318FF; /* Custom hover color for brand */
+}
+
+.CustomNavLink {
+    font-size: 18px; /* Custom font size for links */
+    color: #2B3674; /* Custom color for links */
+}
+
+.CustomNavLink:hover {
+    color: #4318FF; /* Custom hover color for links */
+}

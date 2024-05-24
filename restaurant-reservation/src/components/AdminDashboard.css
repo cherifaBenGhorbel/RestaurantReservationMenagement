@@ -1,0 +1,45 @@
+.Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+}
+
+.Card {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    margin-top: -150px;
+    text-align: center;
+}
+
+.Title {
+    font-size: 36px;
+    color: #2B3674;
+    margin-bottom: 30px;
+}
+
+.ListGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.ListGroupItem {
+    padding: 15px 20px;
+    margin: 5px 0;
+    border: 1px solid #E0E5F2;
+    border-radius: 5px;
+    color: #2B3674;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #f8f9fa;
+}
+
+.ListGroupItem:hover {
+    background-color: #DBE6FE;
+}

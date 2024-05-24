@@ -1,0 +1,16 @@
+/* Add your styles here */
+.navbar {
+    background: #333;
+    padding: 10px;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .navbar a:hover {
+    color: #007bff;
+  }
+  

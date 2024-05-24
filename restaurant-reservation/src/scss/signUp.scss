@@ -1,0 +1,173 @@
+@use "utils" as *;
+@use "global" as *;
+
+$primary-color: #4318FF;
+$secondary-color: #2B3674;
+$text-color: #A3AED0;
+$background-color: #F4F7FE;
+$input-border-color: #E0E5F2;
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.Container {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  .SignIn {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .Form {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      width: 100%;
+
+      .Header {
+        text-align: center;
+        margin-bottom: 30px;
+
+        .Title {
+          font-size: 36px;
+          color: $secondary-color;
+          margin-bottom: 10px;
+        }
+
+        .Description {
+          font-size: 16px;
+          color: $text-color;
+        }
+      }
+
+      .InputField {
+        margin-bottom: 20px;
+
+        label {
+          display: block;
+          margin-bottom: 5px;
+          color: $secondary-color;
+          font-weight: bold;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+          width: 100%;
+          padding: 10px;
+          border-radius: 5px;
+          border: 1px solid $input-border-color;
+          box-sizing: border-box;
+        }
+      }
+
+      .Button {
+        width: 100%;
+        padding: 12px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        background-color: $primary-color;
+
+        &.Google {
+          background-color: $background-color;
+          color: $secondary-color;
+          margin-top: 10px;
+
+          &:hover {
+            background-color: lighten($background-color, 10%);
+          }
+        }
+      }
+
+      .ForgotAndCheckbox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 18px;
+
+        .ForgetPassword a {
+          color: $primary-color;
+          font-weight: bold;
+          text-decoration: none;
+        }
+
+        .Checkbox {
+          display: flex;
+          align-items: center;
+
+          input[type="checkbox"],
+          label {
+            margin-right: 5px;
+          }
+        }
+      }
+
+      .Separator {
+        text-align: center;
+        margin: 20px 0;
+
+        .Or {
+          color: $text-color;
+          font-weight: bold;
+          display: inline-block;
+          margin: 0 10px;
+        }
+
+        .Line {
+          border-top: 1px solid $input-border-color;
+          width: 100px;
+          display: inline-block;
+          margin-top: 8px;
+        }
+      }
+
+      .NotRegisteredYetCreateAnAccount {
+        text-align: center;
+        margin-top: 20px;
+
+        a {
+          color: $primary-color;
+          font-weight: bold;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  .Image {
+    background-image: url('background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 768px) {
+      height: 200px;
+    }
+
+    img {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+  rel="stylesheet"
+  type="text/css"
+  href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+  integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+  crossorigin="anonymous"
+/>
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <!-- Please DO NOT remove this line, all link and script tags will be merged to here -->
+
+    <link rel="stylesheet" type="text/css" href="/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="/css/fonts.css" />
+
+    <link rel="stylesheet" type="text/css" href="/css/signUp.css" />
+
+<style>
+  a {
+      text-decoration: none;  /* Remove underline */
+      color: inherit;         /* Inherit color from parent */
+      cursor: default;        /* Change cursor to default arrow */
+  }
+</style>
+  <title>SignIn</title>
+  <style>
+    .Container {
+    display: flex;
+}
+
+.Image {
+    background-image: url('background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 900px;
+    height: 100vh; 
+    overflow: hidden;
+}
+
+.SignIn {
+    flex: 1;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+.Form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+  
+  .Header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .Title {
+    font-size: 36px;
+    color: #2B3674;
+    margin-bottom: 10px;
+  }
+  
+  .Description {
+    font-size: 16px;
+    color: #A3AED0;
+  }
+  
+  .InputField {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #2B3674;
+    font-weight: bold;
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #E0E5F2;
+  }
+  
+  button.Button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #4318FF;
+  }
+  
+  button.Button.Google {
+    background-color: #F4F7FE;
+    color: #2B3674;
+  }
+  
+  button.Button.Google:hover {
+    background-color: #DBE6FE;
+  }
+  
+  div.Separator {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  div.Or {
+    color: #A3AED0;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  div.Line {
+    border-top: 1px solid #E0E5F2;
+    width: 100px;
+    display: inline-block;
+    margin-top: 8px;
+  }
+  
+  .NotRegisteredYetCreateAnAccount {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .NotRegisteredYetCreateAnAccount a {
+    color: #4318FF;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .NotRegisteredYetCreateAnAccount a:hover {
+    text-decoration: underline;
+  }
+
+  .ForgotAndCheckbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 18px;
+    
+}
+
+.ForgetPassword a {
+    color: #4318FF;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.Checkbox {
+    display: flex;
+}
+
+.Checkbox input[type="checkbox"],
+.Checkbox label {
+    margin-right: 5px;
+    
+}
+  </style>
+</head>
+<body>
+  <div class="Container">
+
+    <div class="SignIn">
+      <div class="Form">
+        <div class="Header">
+          <h1 class="Title">Sign In</h1>
+          <p class="Description">Enter your email and password to sign in!</p>
+        </div>
+        
+        <div class="InputField">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+        
+        <div class="InputField">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter your password" required>
+          <div class="PasswordToggle"></div>
+        </div>
+        
+        <button class="Button">Sign In</button>
+        
+        <div class="ForgotAndCheckbox">
+          <div class="Checkbox">
+            <input type="checkbox" id="keepLoggedIn">
+            <label for="keepLoggedIn">Keep me logged in</label>
+          </div>
+          <div class="ForgetPassword">
+            <a href="#">Forgot password?</a>
+          </div>
+        </div>
+        
+        <div class="Separator">
+          <div class="Line"></div>
+          <div class="Or">or</div>
+          <div class="Line"></div>
+        </div>
+        
+        <button class="Button Google">Sign in with Google</button>
+        
+        <div class="NotRegisteredYetCreateAnAccount">
+          Not registered yet? <a href="#">Create an Account</a>
+        </div>
+      </div>
+    </div>
+    <div class="Image">
+      <img src="background.png" alt="" srcset="">
+    </div>
+  </div>
+  
+</body>
+</html>
